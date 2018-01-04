@@ -23,17 +23,22 @@
 		<center>
 		<div class="container" style="padding-top: 5%">
 			<h2 class="text-light"> Fazer login </h2>
-			<form class="login" name="validar" method="post" action="ativar_login/ativar_login.php">
+			<form class="login" name="validar" method="post" action="login/login.php">
 				<div class="form-group">
-    				<input class="form-control" id="user_name" placeholder="Usuário">
+    				<input name="login" type="text" class="form-control" id="login" placeholder="Usuário">
   				</div>
 
   				<div class="form-group">
-  					<input type="password" class="form-control" id="user_pass" placeholder="Senha">
+  					<input name="senha" type="password" class="form-control" id="senha" placeholder="Senha">
   				</div>
+  				
+  				</br>
 
-  				<center><button type="submit" class="btn btn-info">Entrar</button></center>
+  				<center><button type="submit" class="btn btn-info">Login</button></center>
 			</form>
+			</br>
+
+			<a href="https://gamevilla.000webhostapp.com/cadastrar/cadastro.html"><button type="button" class="btn btn-light">Cadastrar-se</button></a>
 		</div>
 		</center>
 
