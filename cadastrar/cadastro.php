@@ -1,3 +1,4 @@
+
 <?php
 
 	include "../config.php";
@@ -10,7 +11,7 @@
 	$cadastro_valido = FALSE;
 
 	if ((!$login) || (!$senha) || (!$email)){
-		include "../msg_error/campovazio.html";
+		include "../auxi/campovazio.html";
 		include "cadastro.html";
 	} else {
 
@@ -19,7 +20,7 @@
 		$dado = mysqli_fetch_array($sql_user_check, MYSQLI_ASSOC);
 
 		if($dado['login'] == $login){
-			include "../msg_error/usuarioexiste.html";
+			include "../auxi/usuarioexiste.html";
 
 			include "cadastro.html";
 		} else {

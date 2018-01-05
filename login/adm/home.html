@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<!-- Required meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    	<!-- MEUS CSS -->
+    	<link rel="stylesheet" href="../../css/one.css">
+
+		<title>Painel Administrativo</title>
+
+	</head>
+	<body style="background-image: url('https://lh6.googleusercontent.com/proxy/ov-1G2HPTecnTmNy4pA4FYiffj0RDpv-yZcMlWcYRuTTiYIhv_0TAh5oeCq0c7tEOKmhUsp_GqoC-cNDDGe2GQ4OCBtHCPIPnoTorOrIn9AgT2mI11wsIqgEc3eq-A=s0-d')">
+
+		<div class="container-fluid text-light">
+			<center>
+
+				<h1 class="titulo">GameVilla</h1>
+				<h4>Painel Administrativo</h4>
+
+			<center>
+
+		</div>
+
+		<hr class="espaco"/>
+
+		<center>
+		<div class="container" style="padding-top: 1%; padding-bottom: 1%">
+			<h2 class="text-light"> Ativar/Desativar Login </h2>
+			<form class="login" name="validar" method="post" action="ativar-desativar.php">
+
+  				</br>
+
+				<div class="form-group">
+    				<input name="login" type="text" class="form-control" id="login" placeholder="Usuário">
+  				</div>
+  				<select name="ativado" class="custom-select my-1 mr-sm-2" id="ativado">
+    				<option selected value="0">Desativar</option>
+    				<option value="1">Ativar</option>
+  				</select>
+
+  				</br>
+  				</br>
+
+  				<button type="submit" class="btn btn-info">Ativar/Desativar</button>
+			</form>
+			</br>
+
+		</div>
+
+		<hr class="espaco"/>
+
+		<div class="container" style="padding-top: 1%; padding-bottom: 1%">
+			<h2 class="text-light"> Alterar Cargo </h2>
+			<form class="login" name="validar" method="post" action="alterarcargo.php">
+
+  				</br>
+
+				<div class="form-group">
+    				<input name="login" type="text" class="form-control" id="login" placeholder="Usuário">
+  				</div>
+  				<select name="nivel_user" class="custom-select my-1 mr-sm-2" id="nivel_user">
+    				<option selected value="0">Normal</option>
+    				<option value="1">Administrador</option>
+    				<option value="2">Supremo</option>
+  				</select>
+
+  				</br>
+  				</br>
+
+  				<button type="submit" class="btn btn-info">Ativar/Desativar</button>
+			</form>
+			</br>
+
+		</div>
+
+		<hr class="espaco"/>
+
+		<a href="https://gamevilla.000webhostapp.com/login/login_aprovado.php"><button type="submit" class="btn btn-light">Sair do painel</button></a>
+		</center>
+
+		<!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	</body>
+
+</html>

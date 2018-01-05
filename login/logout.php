@@ -2,7 +2,7 @@
 
 	session_start();
 
-	include "../msg_error/logoutm.html";
+	include "../auxi/logoutm.html";
 
 	session_destroy();
 

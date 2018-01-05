@@ -8,7 +8,7 @@
 	$senha = trim ($_POST['senha']);
 
 	if((!$login) || (!$senha)){
-		include "../msg_error/campovazio.html";
+		include "../auxi/campovazio.html";
 
 		include "../index.html";
 	} else {
@@ -30,7 +30,7 @@
 			header("Location: login_aprovado.php");
 
 		} else {
-			include "../msg_error/loginerror.html";
+			include "../auxi/loginerror.html";
 
 			include "login.html";
 		}

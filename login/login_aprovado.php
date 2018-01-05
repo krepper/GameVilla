@@ -16,19 +16,22 @@
 
 		include "login_aprovado.html";
 
-		if($nivel_user <= 2){
-			echo "<center> Jogar </center>";
+		if($nivel_user >= 0){
+			include "../auxi/btn_jogar.html";
+			echo "</br>";
 		}
 
 		if($nivel_user >= 2){
-			echo "</br><center> Painel administrativo </center>";
+			include "../auxi/btn_painel.html";
+			echo "</br>";
 		}
 
-		echo "</br></br><center><a href=\"logout.php\">Sair</a></center>";
+		include "../auxi/btn_sair.html";
+		echo "</br>";
 
 	} else {
 	
-		include "../msg_error/loginerror.html";
+		include "../auxi/loginerror.html";
 
 		include "login.html";
 
