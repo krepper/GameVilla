@@ -5,6 +5,9 @@
 }
 
 .fundo{
-	background-color: 000;
+	background-color: #000;
 }
 
+.espaco{
+	border-color: #595959; 
+}
